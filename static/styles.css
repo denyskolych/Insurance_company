@@ -1,0 +1,174 @@
+body
+{
+    margin: 0;
+    background-image: url('../photos/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logo
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo:hover
+ {
+    transform: scale(1.1);
+ }
+
+.nav
+{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item{
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nav-item:hover
+{
+    transform: scale(1.4);
+}
+
+.login-button
+{
+    background-color: #23A6F0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s,background-color 0.3s;
+    visibility: hidden;
+}
+
+.login-button:hover
+{
+    transform: scale(1.2);
+    background-color: #1c87c9;
+}
+
+.text-container
+{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 130px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      opacity: 0.7;
+      text-align: center;
+}
+
+.main-btn
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 550px;
+}
+
+.btn
+{
+    background-color: #23A6F0;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.8s, color 0.8s,transform 0.3s;
+    opacity: 0.8;
+}
+
+.btn:hover
+{
+    background-color: #fff;
+    color: #23A6F0;
+    transform: scale(1.1);
+}
+
+.active
+{
+    font-weight: bold;
+    color: #23A6F0;
+    opacity: 0.7;
+}
+
+.login-container
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 20%;
+    margin: 100px auto 0;
+}
+
+h2
+{
+    text-align: center;
+    color: #23A6F0; /* Колір заголовка */
+}
+
+.login-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="submit"]
+{
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #23A6F0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover
+{
+    background-color: #1c87c9; /* Змінений колір кнопки при наведенні */
+}
+
